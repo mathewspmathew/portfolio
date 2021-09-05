@@ -5,12 +5,19 @@ my personal website
 Method for accessing it on your localhost:
 
 Step 1: Clone the repository
+<br /><br />
 Step 2: I recommend setup a virtual environment in a specific folder.(use virtual wrapper)
+<br />
   Activate it using \Scripts\activate.bat 
+  <br /><br />
 Step 3: Install Django in it using: pip install django.
- In the coomand prompt : python manage.py runserver 
+<br />
+ In the coomand prompt : python manage.py runserver.
+ <br />
  Copy the url of your local host to the browser.
+ <br />
  That's it
+ <br />
 
 
 
