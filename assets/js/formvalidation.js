@@ -13,6 +13,8 @@ form.addEventListener('submit', (e)=>{
 
     
     const email_check= /^([A-Za-z0-9_\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    const name_check = /^[a-zA-Z\s-]+$/;
+
     if (!email.value.match(email_check)){
         e.preventDefault();
         errorElementEmail.innerText="Email invalid";
@@ -52,6 +54,13 @@ form.addEventListener('submit', (e)=>{
 
          errorElementName.innerText = "enter the alphabets"
 
+    }else{
+        errorElementName.innerText="";
+    }
+
+    if (!name.value.match(name_check)){
+        e.preventDefault();
+        errorElementName.innerText="Name invalid or may contains special charcters";
     }else{
         errorElementName.innerText="";
     }
